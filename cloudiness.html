@@ -11,6 +11,150 @@
     />
     <link rel="stylesheet" href="/Users/carlysethomas/Desktop/Web Design Challenge/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+ 
+      <style>
+    .dropdown-item {
+  padding-left: 0;
+  font-size: 15px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+body {
+  background-color: lightgray;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.container {
+  border-radius: 3px 5px 3px 5px;
+  background-color: whitesmoke;
+}
+
+.col {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#temp {
+  cursor: point;
+}
+
+#temp:hover {
+  color: navy;
+  border-style: dotted;
+  transition-timing-function: ease-in;
+}
+
+#humidity {
+  cursor: point;
+}
+
+#humidity:hover {
+  color: navy;
+  border-style: dotted;
+  transition-timing-function: ease-in;
+}
+
+#cloudiness {
+  cursor: point;
+}
+
+#cloudiness:hover {
+  color: navy;
+  border-style: dotted;
+  transition-timing-function: ease-in;
+}
+
+#wind {
+  cursor: point;
+}
+
+#wind:hover {
+  color: navy;
+  border-style: dotted;
+  transition-timing-function: ease-in;
+}
+
+/*Temperature, Humidity, Cloudiness and Wind Speed Pages*/
+#temp-2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.max {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.max-title {
+  text-align: center;
+}
+
+#comparison {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h6 {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*Data Page*/
+.table table-hover {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    vertical-align: center;
+  }
+  .col-6 {
+    margin-right: 25px;
+    margin-left: 25px;
+    display: inline;
+    vertical-align: center;
+  }
+  .row {
+    margin-right: 25px;
+    margin-left: 25px;
+    display: inline;
+    vertical-align: center;
+  }
+  .dataframe {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    vertical-align: center;
+  }
+}
+  </style>
+  
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -36,17 +180,17 @@
           <li class="nav-item active">
             <a
               class="nav-link"
-              href="/Users/carlysethomas/Desktop/Web Design Challenge/index.html"
+              href="./index.html"
               >Home <span class="sr-only"></span
             ></a>
             <li class="nav-item">
-            <a class="nav-link" href="/Users/carlysethomas/Desktop/Web Design Challenge/comparison.html">Comparison</a>
+            <a class="nav-link" href="./comparison.html">Comparison</a>
           </li>
           <li class="nav-item">
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
-              href="/Users/carlysethomas/Desktop/Web Design Challenge/index.html"
+              href="./index.html"
               id="navbarDropdownMenuLink"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -55,13 +199,13 @@
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/Users/carlysethomas/Desktop/Web Design Challenge/temp.html">Max Temperature</a>
-              <a class="dropdown-item" href="/Users/carlysethomas/Desktop/Web Design Challenge/humidity.html">Humidity</a>
-              <a class="dropdown-item" href="/Users/carlysethomas/Desktop/Web Design Challenge/cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="/Users/carlysethomas/Desktop/Web Design Challenge/wind.html">Wind Speed</a>
+              <a class="dropdown-item" href="./temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="./humidity.html">Humidity</a>
+              <a class="dropdown-item" href="./cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="./wind.html">Wind Speed</a>
             </div>
             </li>
-            <a class="nav-link" href="/Users/carlysethomas/Desktop/Web Design Challenge/data.html">Data</a>
+            <a class="nav-link" href="./data.html">Data</a>
           </li>
           </li>
         </ul>
@@ -82,7 +226,7 @@ LATITUDE Vs CLOUDINESS
 </h2>
 </br>
 </br>
-    <img id="temp-2" src="images/Fig3.png" width = "600">
+    <img id="temp-2" src="./Fig3.png" width = "600">
 </br>
 </br>
 <p class="max"> During our City Latitude vs Cloudiness analysis we noticed that the data reflects that cloudiness was mainly present between -60 and 80 Latitude.  It is also important to note that cloudiness was most prominent in the Northern Hemisphere.  </br> </br> *Data does not reflect what is necessary for cloudiness become a factor and/or at what point cloudiness becomes a factor.*  </p>
@@ -95,21 +239,21 @@ LATITUDE Vs CLOUDINESS
       id="humidity">City Latitude Vs Humidity 
     </br>
     </br>
-      <a href = "/Users/carlysethomas/Desktop/Web Design Challenge/humidity.html" target="_blank">
-    <img src="images/Fig2.png" width = "250"></a>
+      <a href = "./humidity.html" target="_blank">
+    <img src="./Fig2.png" width = "250"></a>
   </div>
   <div class="col" id="temp">City Latitude Vs Max Temperature
     </br>
     </br>
-      <a href = "/Users/carlysethomas/Desktop/Web Design Challenge/temp.html" target="_blank">
+      <a href = "./temp.html" target="_blank">
           <img src="images/Fig1.png" width = "250">
       </a>
   </div>
   <div class="col" id="wind">City Latitude Vs Wind Speed
     </br>
     </br>
-      <a href = "/Users/carlysethomas/Desktop/Web Design Challenge/wind.html" target="_blank">
-          <img src="images/Fig4.png" width = "250">
+      <a href = "./wind.html" target="_blank">
+          <img src="./Fig4.png" width = "250">
       </a>
 
   </div>
