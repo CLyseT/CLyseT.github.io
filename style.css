@@ -1,0 +1,142 @@
+/*Landing Page*/
+
+.dropdown-item {
+  padding-left: 0;
+  font-size: 15px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+body {
+  background-color: lightgray;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.container {
+  border-radius: 3px 5px 3px 5px;
+  background-color: whitesmoke;
+}
+
+.col {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#temp {
+  cursor: point;
+}
+
+#temp:hover {
+  color: navy;
+  border-style: dotted;
+  transition-timing-function: ease-in;
+}
+
+#humidity {
+  cursor: point;
+}
+
+#humidity:hover {
+  color: navy;
+  border-style: dotted;
+  transition-timing-function: ease-in;
+}
+
+#cloudiness {
+  cursor: point;
+}
+
+#cloudiness:hover {
+  color: navy;
+  border-style: dotted;
+  transition-timing-function: ease-in;
+}
+
+#wind {
+  cursor: point;
+}
+
+#wind:hover {
+  color: navy;
+  border-style: dotted;
+  transition-timing-function: ease-in;
+}
+
+/*Temperature, Humidity, Cloudiness and Wind Speed Pages*/
+#temp-2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.max {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.max-title {
+  text-align: center;
+}
+
+#comparison {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h6 {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*Data Page*/
+.table table-hover {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    vertical-align: center;
+  }
+  .col-6 {
+    margin-right: 25px;
+    margin-left: 25px;
+    display: inline;
+    vertical-align: center;
+  }
+  .row {
+    margin-right: 25px;
+    margin-left: 25px;
+    display: inline;
+    vertical-align: center;
+  }
+  .dataframe {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    vertical-align: center;
+  }
+}
